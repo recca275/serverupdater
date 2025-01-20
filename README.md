@@ -64,5 +64,4 @@ Important Notes:
 - The script will only back up the world if the world directory exists at the specified path.
 - Regularly monitor the log file to verify that the backup and maintenance processes are functioning as expected.
 
-For any issues or suggestions, feel free to modify the script as per your needs.
 

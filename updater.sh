@@ -1,5 +1,20 @@
 #!/bin/bash
 
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+function donate() {
+    printf "${GREEN}****************************************${NC}\n"
+    printf "${GREEN}*                                      *${NC}\n"
+    printf "${GREEN}*   Enjoy & thank you for considering  *${NC}\n"
+    printf "${GREEN}*   a donation! You can find and       *${NC}\n"
+    printf "${GREEN}*         support me at:               *${NC}\n"
+    printf "${GREEN}*   https://www.github.com/recca275    *${NC}\n"
+    printf "${GREEN}*   https://www.paypal.me/recca275     *${NC}\n"
+    printf "${GREEN}*                                      *${NC}\n"
+    printf "${GREEN}****************************************${NC}\n"
+}
+
 LOGFILE="/var/log/server_maintenance.log"
 MINECRAFT_WORLD_PATH="/path/to/minecraft/world"  # Update with the actual Minecraft world path
 NAS_PATH="/mnt/nas/minecraft_backups"  # Update with the actual path to your NAS
@@ -25,3 +40,5 @@ if [ "$CURRENT_HOUR" -eq "04" ]; then
 else
   echo "Skipped maintenance at $(date). Current hour: $CURRENT_HOUR" >> $LOGFILE
 fi
+#end of program
+donate
